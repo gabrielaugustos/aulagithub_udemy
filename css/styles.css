@@ -1,7 +1,31 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 
-*{
+* {
+    box-sizing: border-box;
+    /* para que a borda dos elementos não ocupe área */
     font-family: 'Opens Sans', sans-serif;
+}
+
+html,
+body {
+    background-color: #E8E8E8;
+}
+
+header {
+    background-color: #4D41C0;
+    color: #fff;
+}
+
+nav{
+    display: flex; /*alinhar os "filhos" um elemento*/
+    align-items: center;
+    justify-content: space-between; /*space-between -> um item no começo e o outro no fim*/
+}
+
+a,
+a:hover {
+    /*a:hover -> quando passar o mouse em cima*/
+    text-decoration: none;
+    color: unset;
 }
