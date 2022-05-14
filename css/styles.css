@@ -3,6 +3,7 @@
 :root {
     /*seleciona o elemento raiz do documento*/
     --bg-gray: #E8E8E8;
+    --text-gray: #4a4a4a;
     --color-primary: #4D41C0;
     --withe: #fff;
 }
@@ -45,7 +46,7 @@ nav {
 }
 
 nav h1 {
-    font-size: 24px;
+    font-size: 24px; /*tamanho da fonte*/
     font-weight: 700;
     height: center;
 }
@@ -63,11 +64,52 @@ a:hover {
 }
 
 .dsmovie-contact-container {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
 
 }
 
-.dsmovie-contact-container img{
+.dsmovie-contact-container img {
     margin-right: 10px;
+}
+
+#dsmovie-card-list {
+    padding: 40px 0;
+}
+
+.dsmovie-card {
+    width: 360px; 
+}
+
+.dsmovie-card img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.dsmovie-card-description{
+    background-color: var(--withe);
+    padding: 10px 0 20px 0; /*topo, direita, em baixo, ezquerda*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-card-description h3{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.dsmovie-btn, .dsmovie-btn:hover{
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-primary);
+    color: var(--withe);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 }
